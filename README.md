@@ -4,8 +4,6 @@
 
 **Dragon Flight** is a simple, lightweight JavaScript arcade game where you guide a dragon through endless obstacles. The goal? Stay alive as long as possible while scoring points by dodging pillars. Think *Flappy Bird*, but with a dragon and full keyboard control!
 
-![Screenshot](screenshot.png) <!-- Add a screenshot if available -->
-
 ## 🎮 Features
 
 - 🐲 Play as a dragon flying through a vibrant sky
