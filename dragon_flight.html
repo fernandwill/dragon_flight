@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Flight</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #87CEEB, #98FB98);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        
+        #gameContainer {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        canvas {
+            border: 3px solid #4a4a4a;
+            border-radius: 10px;
+            background: linear-gradient(to bottom, #87CEEB, #98FB98);
+        }
+        
+        #score {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        #gameOver {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            display: none;
+        }
+        
+        button {
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        
+        button:hover {
+            background: #ff5252;
+        }
+        
+        .controls {
+            margin-top: 15px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="score">Score: 0</div>
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+        <div class="controls">
+            Use ARROW KEYS or WASD to fly the dragon.
+        </div>
+    </div>
+    
+    <div id="gameOver">
+        <h2>Game Over!</h2>
+        <p>Final Score: <span id="finalScore">0</span></p>
+        <button onclick="restartGame()">Play Again</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
